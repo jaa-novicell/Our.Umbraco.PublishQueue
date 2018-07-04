@@ -4,10 +4,10 @@
         <div class="umb-pane">
             <div class="propertyDiv" ng-hide="vm.processing || vm.processed">
                 <h5>
-                    Send this page and all it's sub pages to the publication queue.
+                    Send this page and all its sub pages to the publication queue.
                 </h5>
                 <p>
-                    Pages will be sent to the queue and will be published in the background, It may take
+                    Pages will be sent to the queue and will be published in the background. It may take
                     several minutes before the content is visible on the site.
                 </p>
                 You can publish this page and all its subpages by checking <em>Include unpublished subpages</em> below.
@@ -35,7 +35,7 @@
             </div>
             <div ng-show="vm.processed">
                 <h5>Added to the queue</h5>
-                {{vm.count}} pages where added and there are now {{vm.status.Count}} pages in the queue.
+                {{vm.count}} pages were added and there are now {{vm.status.Count}} pages in the queue.
             </div>
         </div>
     </div>
@@ -44,7 +44,7 @@
             <localize key="general_close">Close</localize>
         </a>
         <button ng-if="!vm.processing && !vm.processed" ng-click="vm.send()" class="btn btn-primary">
-            Send to Queue
+            Send to queue
         </button>
     </div>
 </div>
